@@ -1,5 +1,10 @@
 <template>
-  <div ref="wordcloud" class="wordcloud"></div>
+  <div>
+    <div style="height:25px;text-align: center;padding-bottom: 20px;margin-top: -15px;">
+      <h1>豆瓣前250电影评论区 中文分词 词云图</h1>
+    </div>
+    <div ref="wordcloud" class="wordcloud"></div>
+  </div>
 </template>
 
 <script>
@@ -20,8 +25,10 @@ export default {
     axios.get("/ststic/comments_word_count.json").then(response => {
       _this.wordList = response.data;
       // 无效数据处理
-      _this.wordList[0].value=0
-      _this.wordList[6].value=0
+      // _this.wordList[0].value = 0;
+      // _this.wordList[4].value = 0;
+      // _this.wordList[7].value = 0;
+      // _this.wordList[6].value = 0;
       // 当数据获取完后再初始化echarts
       _this.initchart();
       // console.log(response.data);
@@ -41,7 +48,7 @@ export default {
             //用来调整字的大小范围
             // Text size range which the value in data will be mapped to.
             // Default to have minimum 12px and maximum 60px size.
-            sizeRange: [11, 125],
+            sizeRange: [9, 125],
             // Text rotation range and step in degree. Text will be rotated randomly in range [-90,                                                                             90] by rotationStep 45
             //用来调整词的旋转方向，，[0,0]--代表着没有角度，也就是词为水平方向，需要设置角度参考注释内容
             // rotationRange: [-45, 0, 45, 90],
@@ -86,7 +93,7 @@ export default {
 <style scoped>
 .wordcloud {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 150px);
   margin: auto;
 }
 </style>

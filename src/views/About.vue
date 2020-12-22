@@ -1,7 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-    <v-chart :options="polar"/>
+  <div class="bingtu">
+    <v-chart :options="polar" :auto-resize="true"/>
   </div>
 </template>
 
@@ -67,3 +66,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+.bingtu{
+  height: 100vh;
+  width: 100%;
+}
+</style>

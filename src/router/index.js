@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import CommentsWordCount from "@/views/CommentsWordCount";
+import CountryAndPlace from "@/views/CountryAndPlace";
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,11 @@ const routes = [
     path: "/comments-word",
     name: "CommentWordCount",
     component: CommentsWordCount
+  },
+  {
+    path: "/country-and-place",
+    name: "CountryAndPlace",
+    component: CountryAndPlace
   },
   {
     path: "/about",

@@ -2,15 +2,15 @@
   <div id="app">
     <el-container style="height: 100vh; border: 0px">
       <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
-        <el-menu :default-openeds="['1', '3']" router>
+        <el-menu :default-openeds="['1', '2']" router>
           <el-submenu index="1">
             <template slot="title"
-              ><i class="el-icon-message"></i>导航一</template
+              ><i class="el-icon-message"></i>数据概览</template
             >
             <el-menu-item-group>
-              <template slot="title">分组一</template>
-              <el-menu-item index="1-1">选项1</el-menu-item>
-              <el-menu-item index="1-2">选项2</el-menu-item>
+              <template slot="title">big-data</template>
+              <el-menu-item index="comments-word">评论词云图</el-menu-item>
+              <el-menu-item index="country-and-place">国家地区排行</el-menu-item>
             </el-menu-item-group>
             <el-menu-item-group title="分组2">
               <el-menu-item index="1-3">选项3</el-menu-item>
@@ -108,4 +108,5 @@ body {
 .el-aside {
   color: #333;
 }
+
 </style>
