@@ -1,0 +1,65 @@
+<template>
+  <el-table :data="tableData" style="width: 100%">
+    <el-table-column type="expand">
+      <template slot-scope="props">
+        <el-form label-position="left" inline class="demo-table-expand">
+          <el-form-item label="主演">
+            <span>{{ props.row.actors }}</span>
+          </el-form-item>
+        </el-form>
+      </template>
+    </el-table-column>
+    <el-table-column prop="rank" label="排名" width="50"> </el-table-column>
+    <el-table-column prop="score" label="得分" width="50"> </el-table-column>
+    <el-table-column prop="movie" label="电影名称（中外文）" width="220">
+    </el-table-column>
+    <el-table-column prop="pubdate" label="发行日期" width="120">
+    </el-table-column>
+    <el-table-column prop="country" label="国家地区" width="140">
+    </el-table-column>
+    <el-table-column prop="type" label="类型" width="180"> </el-table-column>
+    <el-table-column prop="score" label="得分" width="50"> </el-table-column>
+    <el-table-column prop="director" label="导演" width="260">
+    </el-table-column>
+    <el-table-column prop="count" label="评分人数"> </el-table-column>
+  </el-table>
+</template>
+
+<script>
+import axios from "axios";
+
+export default {
+  name: "AllInfo",
+  mounted() {
+    let _this = this;
+    axios
+      .get("/ststic/all_info.json")
+      .then(response => {
+        console.log(response.data);
+        _this.tableData = response.data;
+      })
+      .catch()
+      .finally();
+  },
+  data() {
+    return {
+      tableData: []
+    };
+  }
+};
+</script>
+
+<style>
+.demo-table-expand {
+  font-size: 0;
+}
+.demo-table-expand label {
+  width: 90px;
+  color: #99a9bf;
+}
+.demo-table-expand .el-form-item {
+  margin-right: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+</style>
