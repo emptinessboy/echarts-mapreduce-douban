@@ -90,7 +90,7 @@ export default {
   background: #accef1;
 }
 .el-table .tree-row {
-  background: #c5dbf1;
+  background: #cadff6;
 }
 .el-table .four-row {
   background: #e1effd;
