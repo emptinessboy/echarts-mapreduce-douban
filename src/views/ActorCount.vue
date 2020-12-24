@@ -4,8 +4,9 @@
     :word="this.word"
     :count="this.count"
     name="TOP250作品数量"
-    title="导演作品排名"
-    subtext="(受篇幅限制)入围TOP250作品少于2件的不显示"
+    title="演员作品排名"
+    subtext="(受篇幅限制)入围TOP250作品少于5件的不显示"
+    theme="blue"
   ></e-bar>
   <!--  <v-chart :options="bar" :auto-resize="true" />-->
 </template>
@@ -14,14 +15,14 @@
 import axios from "axios";
 import ChartBar from "@/components/ChartBar";
 export default {
-  name: "DirectorCount",
+  name: "ActorCount",
   components: {
     "e-bar": ChartBar
   },
   mounted() {
     let _this = this;
     axios
-      .get("/ststic/director_count.json")
+      .get("/ststic/actor_count.json")
       .then(response => {
         console.log(response.data);
         _this.word = response.data.word;

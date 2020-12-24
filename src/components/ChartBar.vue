@@ -1,5 +1,5 @@
 <template>
-  <v-chart :options="bar" :auto-resize="true" />
+  <v-chart :options="bar" :auto-resize="true" :theme="this.theme" />
 </template>
 
 <script>
@@ -8,10 +8,10 @@ import ECharts from "vue-echarts"; // 在 webpack 环境下指向 components/ECh
 import "echarts/lib/chart/bar";
 import "echarts/lib/component/tooltip";
 import "echarts/lib/component/title.js";
-import "echarts/theme/fruit.js";
+import "echarts/theme/blue.js";
 export default {
   name: "ChartBar",
-  props: ["word", "count", "name", "title", "subtext"],
+  props: ["word", "count", "name", "title", "subtext", "theme"],
   components: {
     "v-chart": ECharts
   },
@@ -26,7 +26,7 @@ export default {
       bar: {
         title: {
           text: this.title,
-          subtext: this.subtext,
+          subtext: this.subtext
         },
         tooltip: {
           trigger: "axis",

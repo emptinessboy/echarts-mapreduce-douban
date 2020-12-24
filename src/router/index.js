@@ -4,6 +4,7 @@ import CommentsWordCount from "@/views/CommentsWordCount";
 import CountryAndPlace from "@/views/CountryAndPlace";
 import AllInfo from "@/views/AllInfo";
 import DirectorCount from "@/views/DirectorCount";
+import ActorCount from "@/views/ActorCount";
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,11 @@ const routes = [
     path: "/director_count",
     name: "DirectorCount",
     component: DirectorCount
+  },
+  {
+    path: "/actor_count",
+    name: "ActorCount",
+    component: ActorCount
   },
 ];
 

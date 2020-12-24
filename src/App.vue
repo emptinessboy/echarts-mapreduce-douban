@@ -13,6 +13,7 @@
               <el-menu-item index="comments-word">评论词云图</el-menu-item>
               <el-menu-item index="country-and-place">国家地区排行</el-menu-item>
               <el-menu-item index="director_count">导演作品数排行</el-menu-item>
+              <el-menu-item index="actor_count">演员作品数排行</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="2">
