@@ -42,8 +42,4 @@ export default {
 </script>
 
 <style>
-.echarts.style {
-  width: 100%;
-  height: 100%;
-}
 </style>
