@@ -1,5 +1,9 @@
 <template>
-  <el-table :data="tableData" style="width: 100%">
+  <el-table
+    :data="tableData"
+    :row-class-name="tableRowClassName"
+    style="width: 100%"
+  >
     <el-table-column type="expand">
       <template slot-scope="props">
         <el-form label-position="left" inline class="demo-table-expand">
@@ -30,6 +34,22 @@ import axios from "axios";
 
 export default {
   name: "AllInfo",
+  methods: {
+    tableRowClassName({ row, rowIndex }) {
+      if (rowIndex === 0) {
+        return "one-row";
+      } else if (rowIndex === 1) {
+        return "two-row";
+      } else if (rowIndex === 2) {
+        return "tree-row";
+      } else if (rowIndex === 3) {
+        return "four-row";
+      } else if (rowIndex === 4) {
+        return "five-row";
+      }
+      return "";
+    }
+  },
   mounted() {
     let _this = this;
     axios
@@ -61,5 +81,21 @@ export default {
   margin-right: 0;
   margin-bottom: 0;
   width: 100%;
+}
+.el-table .one-row {
+  background: #8ab8e8;
+}
+
+.el-table .two-row {
+  background: #accef1;
+}
+.el-table .tree-row {
+  background: #c5dbf1;
+}
+.el-table .four-row {
+  background: #e1effd;
+}
+.el-table .five-row {
+  background: #f0f7fd;
 }
 </style>

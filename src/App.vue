@@ -7,6 +7,7 @@
             <template slot="title"
               ><i class="el-icon-message"></i>数据概览</template
             >
+              <el-menu-item index="/">所有数据</el-menu-item>
             <el-menu-item-group>
               <template slot="title">big-data</template>
               <el-menu-item index="comments-word">评论词云图</el-menu-item>
