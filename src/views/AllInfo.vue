@@ -85,12 +85,11 @@ export default {
 .el-table .one-row {
   background: #8ab8e8;
 }
-
 .el-table .two-row {
   background: #accef1;
 }
 .el-table .tree-row {
-  background: #cadff6;
+  background: #cbe2fa;
 }
 .el-table .four-row {
   background: #e1effd;
