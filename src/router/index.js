@@ -6,6 +6,7 @@ import AllInfo from "@/views/AllInfo";
 import DirectorCount from "@/views/DirectorCount";
 import ActorCount from "@/views/ActorCount";
 import MovieType from "@/views/MovieType";
+import YearCount from "@/views/YearCount";
 
 Vue.use(VueRouter);
 
@@ -39,6 +40,11 @@ const routes = [
     path: "/movie_type",
     name: "MovieType",
     component: MovieType
+  },
+  {
+    path: "/year_count",
+    name: "YearCount",
+    component: YearCount
   }
 ];
 
