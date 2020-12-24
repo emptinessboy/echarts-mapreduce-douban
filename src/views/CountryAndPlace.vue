@@ -1,8 +1,11 @@
 <template>
   <chart-pie
+    v-if="this.loaded === true"
     :word="this.word"
     :count="this.count"
     title="国家和地区数据统计"
+    subtext="Top250电影分析"
+    name="拍摄国家 / 地区"
   ></chart-pie>
 </template>
 
@@ -20,9 +23,10 @@ export default {
     axios
       .get("/ststic/country_count.json")
       .then(response => {
-        (this.load = true), console.log(response.data);
+        console.log(response.data);
         _this.word = response.data[0];
         _this.count = response.data[1];
+        _this.loaded = true;
       })
       .catch()
       .finally();

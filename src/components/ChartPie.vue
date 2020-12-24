@@ -11,7 +11,6 @@ import "echarts/lib/chart/pie";
 import "echarts/lib/component/polar";
 import "echarts/lib/component/legend";
 import "echarts/lib/component/title.js";
-import axios from "axios";
 
 export default {
   name: "CharPie",
@@ -20,13 +19,15 @@ export default {
     "v-chart": ECharts
   },
   mounted() {
+    console.log(this.word);
+    console.log(this.count);
   },
   data() {
     return {
       polar: {
         title: {
-          text: "国家和地区数据统计",
-          subtext: "动态数据",
+          text: this.title,
+          subtext: this.subtext,
           x: "center"
         },
         tooltip: {
@@ -41,7 +42,7 @@ export default {
         },
         series: [
           {
-            name: "拍摄国家 / 地区",
+            name: this.name,
             type: "pie",
             radius: "55%",
             center: ["50%", "60%"],
