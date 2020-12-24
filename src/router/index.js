@@ -5,6 +5,7 @@ import CountryAndPlace from "@/views/CountryAndPlace";
 import AllInfo from "@/views/AllInfo";
 import DirectorCount from "@/views/DirectorCount";
 import ActorCount from "@/views/ActorCount";
+import MovieType from "@/views/MovieType";
 
 Vue.use(VueRouter);
 
@@ -34,6 +35,11 @@ const routes = [
     name: "ActorCount",
     component: ActorCount
   },
+  {
+    path: "/movie_type",
+    name: "MovieType",
+    component: MovieType
+  }
 ];
 
 const router = new VueRouter({

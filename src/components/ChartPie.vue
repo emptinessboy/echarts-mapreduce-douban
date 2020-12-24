@@ -1,5 +1,5 @@
 <template>
-  <v-chart :options="polar" :auto-resize="true" />
+  <v-chart :options="polar" :auto-resize="true" :theme="this.theme" />
 </template>
 
 <script>
@@ -11,10 +11,11 @@ import "echarts/lib/chart/pie";
 import "echarts/lib/component/polar";
 import "echarts/lib/component/legend";
 import "echarts/lib/component/title.js";
+import "echarts/theme/forest.js";
 
 export default {
   name: "CharPie",
-  props: ["word", "count", "name", "title", "subtext"],
+  props: ["word", "count", "name", "title", "subtext", "theme"],
   components: {
     "v-chart": ECharts
   },
