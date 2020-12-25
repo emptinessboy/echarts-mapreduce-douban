@@ -43,6 +43,8 @@
               <el-menu-item index="list_comments">评论中文词频</el-menu-item>
               <el-menu-item index="list_country">国家地区排名</el-menu-item>
               <el-menu-item index="list_type">类型排名统计</el-menu-item>
+              <el-menu-item index="list_director">导演排名统计</el-menu-item>
+              <el-menu-item index="list_actor">演员排名统计</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
         </el-menu>
@@ -58,13 +60,6 @@
 
         <el-main>
           <router-view></router-view>
-          <!--          <el-table :data="tableData">-->
-          <!--            <el-table-column prop="date" label="日期" width="140">-->
-          <!--            </el-table-column>-->
-          <!--            <el-table-column prop="name" label="姓名" width="120">-->
-          <!--            </el-table-column>-->
-          <!--            <el-table-column prop="address" label="地址"> </el-table-column>-->
-          <!--          </el-table>-->
         </el-main>
       </el-container>
     </el-container>

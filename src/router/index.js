@@ -10,6 +10,8 @@ import YearCount from "@/views/YearCount";
 import ListComments from "@/views/ListComments";
 import ListCountry from "@/views/ListCountry";
 import ListType from "@/views/ListType";
+import ListDirector from "@/views/ListDirector";
+import ListActor from "@/views/ListActor";
 
 Vue.use(VueRouter);
 
@@ -63,6 +65,16 @@ const routes = [
     path: "/list_type",
     name: "ListType",
     component: ListType
+  },
+  {
+    path: "/list_director",
+    name: "ListDirector",
+    component: ListDirector
+  },
+  {
+    path: "/list_actor",
+    name: "ListActor",
+    component: ListActor
   }
 ];
 

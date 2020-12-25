@@ -4,7 +4,7 @@
     :row-class-name="tableRowClassName"
     style="width: 100%"
   >
-    <el-table-column prop="word" :label="this.name" width="220">
+    <el-table-column prop="word" :label="this.name" :width="this.datawidth">
     </el-table-column>
     <el-table-column prop="count" :label="this.subname"> </el-table-column>
   </el-table>
@@ -13,9 +13,8 @@
 <script>
 export default {
   name: "List",
-  props: ["tableData", "name", "subname"],
-  mounted() {
-  },
+  props: ["tableData", "name", "subname", "datawidth"],
+  mounted() {},
   methods: {
     tableRowClassName({ row, rowIndex }) {
       if (rowIndex === 0) {
