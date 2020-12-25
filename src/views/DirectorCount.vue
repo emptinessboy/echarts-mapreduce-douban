@@ -18,6 +18,15 @@ export default {
   components: {
     "e-bar": ChartBar
   },
+  created() {
+    this.$notify({
+      title: "TIPS",
+      message:
+        "导演入围信息统计（如果一个电影有多个导演，则每个导演都按照权重 1 进行统计），考虑篇幅限制少于 2 件入围作品的导演在菜单栏中的列表信息以文字显示！",
+      duration: 8500,
+      offset: 60
+    });
+  },
   mounted() {
     let _this = this;
     axios

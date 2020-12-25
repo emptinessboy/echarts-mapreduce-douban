@@ -19,6 +19,14 @@ export default {
   components: {
     "chart-pie": ChartPie
   },
+  created() {
+    this.$notify({
+      title: "TIPS",
+      message: "（观众最喜爱的电影类型）对入围 TOP250 电影的类型进行统计",
+      duration: 8500,
+      offset: 60
+    });
+  },
   mounted() {
     let _this = this;
     axios

@@ -19,6 +19,15 @@ export default {
   components: {
     "e-bar": ChartBar
   },
+  created() {
+    this.$notify({
+      title: "TIPS",
+      message:
+        "演员入围信息统计（如果一个电影有多个演员，则每个演员都按照权重 1 进行统计），考虑篇幅限制少于 5 件入围作品的演员在菜单栏中的列表信息以文字显示！",
+      duration: 8500,
+      offset: 60
+    });
+  },
   mounted() {
     let _this = this;
     axios

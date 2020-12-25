@@ -18,6 +18,15 @@ export default {
   components: {
     "chart-pie": ChartPie
   },
+  created() {
+    this.$notify({
+      title: "TIPS",
+      message:
+        "这是基于来自 TOP250电影的国家和地区信息统计（如果一个电影有多个国家地区，则每个地区都按照权重 1 进行统计）",
+      duration: 8500,
+      offset: 60
+    });
+  },
   mounted() {
     let _this = this;
     axios

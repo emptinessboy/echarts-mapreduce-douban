@@ -15,6 +15,15 @@ export default {
   components: {
     "v-chart": ECharts
   },
+  created() {
+    this.$notify({
+      title: "TIPS",
+      message:
+        "对近三十年（1990-2019）每年，每季度，入围 TOP250 作品进行统计并求和。",
+      duration: 8500,
+      offset: 60
+    });
+  },
   mounted() {
     let _this = this;
     axios

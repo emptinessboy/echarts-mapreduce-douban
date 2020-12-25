@@ -37,7 +37,15 @@ export default {
       console.log(_this.wordList);
     });
   },
-  created() {},
+  created() {
+    this.$notify({
+      title: "TIPS",
+      message:
+        "这是基于来自 TOP250电影的 2500 条豆瓣评论，经过 ik-analyzer 中文分词处理后得到的词云图（过滤了无意义词）",
+      duration: 8500,
+      offset: 60
+    });
+  },
   methods: {
     initchart() {
       let myChart = echarts.init(this.$refs.wordcloud);
