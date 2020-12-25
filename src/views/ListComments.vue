@@ -13,8 +13,7 @@ import axios from "axios";
 export default {
   name: "ListComments",
   components: { List },
-  methods: {
-  },
+  methods: {},
   mounted() {
     let _this = this;
     axios

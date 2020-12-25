@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div style="height:25px;text-align: center;padding-bottom: 20px;margin-top: -15px;">
+    <div
+      style="height:25px;text-align: center;padding-bottom: 20px;margin-top: -15px;"
+    >
       <h1>豆瓣前250电影评论区 中文分词 词云图</h1>
     </div>
     <div ref="wordcloud" class="wordcloud"></div>

@@ -1,9 +1,5 @@
 <template>
-  <list
-    :tableData="this.tableData"
-    name="电影类型"
-    subname="频次"
-  ></list>
+  <list :tableData="this.tableData" name="电影类型" subname="频次"></list>
 </template>
 
 <script>
@@ -12,8 +8,7 @@ import axios from "axios";
 export default {
   name: "ListType",
   components: { List },
-  methods: {
-  },
+  methods: {},
   mounted() {
     let _this = this;
     axios

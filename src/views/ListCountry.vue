@@ -1,9 +1,5 @@
 <template>
-  <list
-    :tableData="this.tableData"
-    name="国家 / 地区"
-    subname="频次"
-  ></list>
+  <list :tableData="this.tableData" name="国家 / 地区" subname="频次"></list>
 </template>
 
 <script>
@@ -12,8 +8,7 @@ import axios from "axios";
 export default {
   name: "ListCountry",
   components: { List },
-  methods: {
-  },
+  methods: {},
   mounted() {
     let _this = this;
     axios
