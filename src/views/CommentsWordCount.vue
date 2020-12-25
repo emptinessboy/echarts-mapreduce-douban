@@ -24,7 +24,7 @@ export default {
   },
   mounted() {
     let _this = this;
-    axios.get("/static/comments_word_count.json").then(response => {
+    axios.get("./static/comments_word_count.json").then(response => {
       _this.wordList = response.data;
       // 无效数据处理
       // _this.wordList[0].value = 0;

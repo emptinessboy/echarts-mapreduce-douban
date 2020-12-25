@@ -12,7 +12,7 @@ export default {
   mounted() {
     let _this = this;
     axios
-      .get("/static/list_country_count.json")
+      .get("./static/list_country_count.json")
       .then(response => {
         // console.log(response.data);
         _this.tableData = response.data;

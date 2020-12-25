@@ -16,7 +16,7 @@ export default {
   mounted() {
     let _this = this;
     axios
-      .get("/static/list_actor_count.json")
+      .get("./static/list_actor_count.json")
       .then(response => {
         // console.log(response.data);
         _this.tableData = response.data;
