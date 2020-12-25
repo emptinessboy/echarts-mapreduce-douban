@@ -1,8 +1,7 @@
 <template>
-  <!--    v-loading.fullscreen.lock="!loaded"-->
   <list
     :tableData="this.tableData"
-    name="分词词频（原始，未过滤脏词）"
+    name="电影类型"
     subname="频次"
   ></list>
 </template>
@@ -11,14 +10,14 @@
 import List from "@/components/List";
 import axios from "axios";
 export default {
-  name: "ListComments",
+  name: "ListType",
   components: { List },
   methods: {
   },
   mounted() {
     let _this = this;
     axios
-      .get("/static/list_comments_count.json")
+      .get("/static/list_type_count.json")
       .then(response => {
         // console.log(response.data);
         _this.tableData = response.data;

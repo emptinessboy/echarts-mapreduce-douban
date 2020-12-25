@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <el-container style="height: 100vh; border: 0px">
-      <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
+      <el-aside width="220px" style="background-color: rgb(238, 241, 246)">
         <el-menu :default-openeds="['1', '2', '3']" router>
           <el-submenu index="1">
             <template slot="title"
@@ -30,8 +30,8 @@
             </el-menu-item-group>
             <el-menu-item-group>
               <template slot="title">横向条形图</template>
-              <el-menu-item index="director_count">导演作品数排行</el-menu-item>
-              <el-menu-item index="actor_count">演员作品数排行</el-menu-item>
+              <el-menu-item index="director_count">导演作品排行</el-menu-item>
+              <el-menu-item index="actor_count">演员作品排行</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="3">
@@ -41,15 +41,9 @@
             <el-menu-item-group>
               <template slot="title">统计表</template>
               <el-menu-item index="list_comments">评论中文词频</el-menu-item>
-              <el-menu-item index="3-2">选项2</el-menu-item>
+              <el-menu-item index="list_country">国家地区排名</el-menu-item>
+              <el-menu-item index="list_type">类型排名统计</el-menu-item>
             </el-menu-item-group>
-            <el-menu-item-group title="分组2">
-              <el-menu-item index="3-3">选项3</el-menu-item>
-            </el-menu-item-group>
-            <el-submenu index="3-4">
-              <template slot="title">选项4</template>
-              <el-menu-item index="3-4-1">选项4-1</el-menu-item>
-            </el-submenu>
           </el-submenu>
         </el-menu>
       </el-aside>

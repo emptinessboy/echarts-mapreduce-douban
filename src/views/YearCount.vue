@@ -18,7 +18,7 @@ export default {
   mounted() {
     let _this = this;
     axios
-      .get("/ststic/year_count.json")
+      .get("/static/year_count.json")
       .then(response => {
         console.log(response.data);
         _this.line.series[0].data = response.data.A;

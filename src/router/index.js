@@ -8,6 +8,8 @@ import ActorCount from "@/views/ActorCount";
 import MovieType from "@/views/MovieType";
 import YearCount from "@/views/YearCount";
 import ListComments from "@/views/ListComments";
+import ListCountry from "@/views/ListCountry";
+import ListType from "@/views/ListType";
 
 Vue.use(VueRouter);
 
@@ -51,6 +53,16 @@ const routes = [
     path: "/list_comments",
     name: "ListComments",
     component: ListComments
+  },
+  {
+    path: "/list_country",
+    name: "ListCountry",
+    component: ListCountry
+  },
+  {
+    path: "/list_type",
+    name: "ListType",
+    component: ListType
   }
 ];
 

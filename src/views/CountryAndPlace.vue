@@ -21,7 +21,7 @@ export default {
   mounted() {
     let _this = this;
     axios
-      .get("/ststic/country_count.json")
+      .get("/static/country_count.json")
       .then(response => {
         console.log(response.data);
         _this.word = response.data[0];

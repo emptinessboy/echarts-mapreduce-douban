@@ -53,7 +53,7 @@ export default {
   mounted() {
     let _this = this;
     axios
-      .get("/ststic/all_info.json")
+      .get("/static/all_info.json")
       .then(response => {
         console.log(response.data);
         _this.tableData = response.data;
