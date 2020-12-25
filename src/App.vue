@@ -39,8 +39,8 @@
               ><i class="el-icon-setting"></i>文本数据</template
             >
             <el-menu-item-group>
-              <template slot="title">分组一</template>
-              <el-menu-item index="3-1">选项1</el-menu-item>
+              <template slot="title">统计表</template>
+              <el-menu-item index="list_comments">评论中文词频</el-menu-item>
               <el-menu-item index="3-2">选项2</el-menu-item>
             </el-menu-item-group>
             <el-menu-item-group title="分组2">

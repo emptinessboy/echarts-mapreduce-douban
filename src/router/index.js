@@ -7,6 +7,7 @@ import DirectorCount from "@/views/DirectorCount";
 import ActorCount from "@/views/ActorCount";
 import MovieType from "@/views/MovieType";
 import YearCount from "@/views/YearCount";
+import ListComments from "@/views/ListComments";
 
 Vue.use(VueRouter);
 
@@ -45,6 +46,11 @@ const routes = [
     path: "/year_count",
     name: "YearCount",
     component: YearCount
+  },
+  {
+    path: "/list_comments",
+    name: "ListComments",
+    component: ListComments
   }
 ];
 
