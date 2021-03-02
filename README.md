@@ -1,5 +1,13 @@
 # 开发静态网站进行可视化展示
 
+**公网地址：[https://huxiaofan.com/doc/douban-info/#/](https://huxiaofan.com/doc/douban-info/#/) 来进行访问。**
+
+## 效果图
+
+[![2018010587-__01__0002.jpg](https://media.everdo.cn/tank/pic-bed/2021/03/02/2018010587-__01__0002.jpg)](https://up.media.everdo.cn/image/FKhn)
+[![2018010587-__02__0002.jpg](https://media.everdo.cn/tank/pic-bed/2021/03/02/2018010587-__02__0002.jpg)](https://up.media.everdo.cn/image/F5t6)
+[![2018010587-__02__0004.jpg](https://media.everdo.cn/tank/pic-bed/2021/03/02/2018010587-__02__0004.jpg)](https://up.media.everdo.cn/image/FZNO)
+
 ## Project setup
 ```
 npm install
@@ -9,19 +17,6 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
 =======================================
 
@@ -58,11 +53,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [![2018010587-__41__0001.jpg](https://media.everdo.cn/tank/pic-bed/2021/03/02/2018010587-__41__0001.jpg)](https://up.media.everdo.cn/image/FXva)
 [![2018010587-__41__0002.jpg](https://media.everdo.cn/tank/pic-bed/2021/03/02/2018010587-__41__0002.jpg)](https://up.media.everdo.cn/image/FpV3)
 
-
-#### 封装完成后，我们就可以在父组件调用条形统计图模块了。
-
-[![2018010587-__42__0001.jpg](https://media.everdo.cn/tank/pic-bed/2021/03/02/2018010587-__42__0001.jpg)](https://up.media.everdo.cn/image/FtfG)
-
+封装完成后，我们就可以在父组件调用条形统计图模块了。
 
 #### 发起异步请求并调用模块：
 
@@ -72,12 +63,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 **模块代码：**
 
-[![2018010587-__42__0002.jpg](https://media.everdo.cn/tank/pic-bed/2021/03/02/2018010587-__42__0002.jpg)](https://up.media.everdo.cn/image/F0jX)
-
-
+[![2018010587-__42__0001.jpg](https://media.everdo.cn/tank/pic-bed/2021/03/02/2018010587-__42__0001.jpg)](https://up.media.everdo.cn/image/FtfG)
 
 **异步请求部分：** （放在组件的mounted生命周期钩子里调用）
 
+[![2018010587-__42__0002.jpg](https://media.everdo.cn/tank/pic-bed/2021/03/02/2018010587-__42__0002.jpg)](https://up.media.everdo.cn/image/F0jX)
 
 #### 编译打包前端代码：
 
