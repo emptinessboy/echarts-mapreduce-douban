@@ -39,9 +39,7 @@ npm run serve
 #### 编写主界面和左侧 导航栏：
 
 [![2018010587-__39__0004.jpg](https://media.everdo.cn/tank/pic-bed/2021/03/02/2018010587-__39__0004.jpg)](https://up.media.everdo.cn/image/FMt4)
-
 [![2018010587-__40__0001.jpg](https://media.everdo.cn/tank/pic-bed/2021/03/02/2018010587-__40__0001.jpg)](https://up.media.everdo.cn/image/FyIM)
-
 [![2018010587-__40__0002.jpg](https://media.everdo.cn/tank/pic-bed/2021/03/02/2018010587-__40__0002.jpg)](https://up.media.everdo.cn/image/FCls)
 
 
